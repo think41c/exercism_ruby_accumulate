@@ -8,7 +8,6 @@ class ArrayTest < Minitest::Test
   end
 
   def test_accumulate_squares
-    skip
     result = [1, 2, 3].accumulate do |number|
       number * number
     end
@@ -16,13 +15,11 @@ class ArrayTest < Minitest::Test
   end
 
   def test_accumulate_upcases
-    skip
     result = %w(hello world).accumulate(&:upcase)
     assert_equal %w(HELLO WORLD), result
   end
 
   def test_accumulate_reversed_strings
-    skip
     result = %w(the quick brown fox etc).accumulate(&:reverse)
     assert_equal %w(eht kciuq nworb xof cte), result
   end

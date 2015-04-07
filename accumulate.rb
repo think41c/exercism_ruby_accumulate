@@ -1,4 +1,5 @@
 class Array
+  
   def accumulate
     new_array = []
     each do |x|
@@ -7,5 +8,3 @@ class Array
     new_array
   end
 end
-
-puts [1].accumulate { |x| 5 + x }
