@@ -1,10 +1,10 @@
 class Array
   
   def accumulate
-    resulting_array = []
-    each do |user_input|
-      resulting_array << yield(user_input)
+    accumulator = []
+    each do |user_array_element|
+      accumulator << yield(user_array_element)
     end
-    resulting_array
+    accumulator
   end
 end
